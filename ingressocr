@@ -16,7 +16,7 @@ fi
 if [ "${TESSERACTVERSION}" = "3.03" ]; then
 	tesseract -psm 4 $INGRESSPROFILE stdout > $OCROUT 2>/dev/null
 else
-	tesseract -psm 6 $INGRESSPROFILE $OCROUT >/dev/null 2>&1
+	tesseract -psm 6 config $INGRESSPROFILE $OCROUT >/dev/null 2>&1
 	mv -f $OCROUT.txt $OCROUT
 fi
 INGRESSUSER=$(grep -A2 AGENT $OCROUT | fgrep -v "LVL" | egrep "[a-z]" | tail -1 | perl -pe 's|.* (\w+) .*|\1|')
