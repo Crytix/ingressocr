@@ -25,6 +25,7 @@ fgrep " AP" $OCROUT  | sed 's/,//g' | perl -pe 's|.* (\d+ AP)|\1|'
 egrep "^Unique Portals Visited|\
 ^Portals Discovered|\
 ^XM Collected|\
+^OPR Agreements\
 ^Distance Walked|\
 ^Resonators Deployed|\
 ^Links Created|\
@@ -50,6 +51,8 @@ egrep "^Unique Portals Visited|\
 ^Glyph Hack Points|\
 ^Longest Hacking Streak|\
 ^Agents Successfully Recruited" \
+^Mission Day(s) Attended\
+^NL-1331 Meetup(s) Attended\
 $OCROUT \
 | sed 's/\\\_\/ //' \
 | sed 's/ <2//' \
