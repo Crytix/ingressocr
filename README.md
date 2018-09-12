@@ -19,6 +19,11 @@ Install tesseract OCR, e.g. on Ubuntu:
 ```
 sudo apt-get install tesseract-ocr tesseract-ocr-eng
 ```
+Add to tesseract configuration file:
+
+```
+textord_heavy_nr 1
+```
 
 Note: you may need to [add the Universe repository](https://help.ubuntu.com/community/Repositories/CommandLine#Adding_the_Universe_and_Multiverse_Repositories) first.
 
