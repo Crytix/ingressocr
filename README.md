@@ -15,6 +15,7 @@ sudo install -m 0755 ingresscsv /usr/local/bin/ingresscsv
 ```
 
 Install tesseract OCR, e.g. on Ubuntu:
+https://github.com/Crytix/tesseract
 
 ```
 sudo apt-get install tesseract-ocr tesseract-ocr-eng
