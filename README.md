@@ -8,7 +8,7 @@ usage:
 Check out the repo to a Linux box and copy the scripts to somewhere in your path, e.g.:
 
 ```
-git clone https://github.com/bvenable/ingressocr
+git clone https://github.com/Crytix/ingressocr
 cd ingressocr
 sudo install -m 0755 ingressocr /usr/local/bin/ingressocr
 sudo install -m 0755 ingresscsv /usr/local/bin/ingresscsv
