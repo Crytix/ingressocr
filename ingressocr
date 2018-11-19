@@ -50,9 +50,10 @@ egrep "^Unique Portals Visited|\
 ^Hacks|\
 ^Glyph Hack Points|\
 ^Longest Hacking Streak|\
-^Agents Successfully Recruited" \
-^Mission Day(s) Attended\
-^NL-1331 Meetup(s) Attended\
+^Agents Successfully Recruited|\
+^Mission Day(s) Attended|\
+^NL-1331 Meetup(s) Attended|\
+^Recursions" \
 $OCROUT \
 | sed 's/\\\_\/ //' \
 | sed 's/ <2//' \
